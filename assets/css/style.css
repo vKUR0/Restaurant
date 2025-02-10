@@ -3,3 +3,14 @@
     transform: scale(1.1);
     transition: transform 0.3s ease;
 }
+
+.menu-hover {
+    border: 1px solid transparent;
+    border-radius: 10px;
+    transition: border-color 0.7s ease-out;
+}
+.menu-hover:hover {
+    border-color: aquamarine;
+    border-radius: 10px;
+    transform: scale(1.1);
+}
