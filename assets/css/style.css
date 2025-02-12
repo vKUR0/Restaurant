@@ -14,3 +14,24 @@
     border-radius: 10px;
     transform: scale(1.1);
 }
+form {
+    background: rgba(255, 255, 255, 0.5); /* Totalement transparent */
+}
+.form-control, .input-group-text, .btn {
+    background: rgba(255, 255, 255, 0.2); /* Transparence légère pour lisibilité */
+    border: none;
+}
+.background-setup {
+background: url("assets/img/ledinorepas.jpg") no-repeat center center;
+background-size: contain;
+}
+.background-setup2 {
+    background: url("assets/img/background.jpg") no-repeat center center fixed;
+    background-size: cover;
+    background-attachment: scroll;
+}
+.img-thumbnail {
+    border: none; /* Supprime la bordure */
+    padding: 0; /* Supprime l'espace intérieur */
+    background: none; /* Évite toute couleur de fond */
+}
