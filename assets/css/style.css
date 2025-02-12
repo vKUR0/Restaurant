@@ -22,11 +22,21 @@ form {
     border: none;
 }
 .background-setup {
-background: url("assets/img/ledinorepas.jpg") no-repeat center center;
-background-size: contain;
+    background: url("../img/ledinorepas.jpg") no-repeat center center;
+    background-size: contain; /* Permet de voir l'image en entier */
+    background-position: top;
+    width: 100%;
+    height: auto;
+    min-height: 70vh; /* Ajuste cette valeur selon la taille souhaitée */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin-top: 0;
 }
+
 .background-setup2 {
-    background: url("assets/img/background.jpg") no-repeat center center fixed;
+    background: url("../img/background.jpg") no-repeat center center fixed;
     background-size: cover;
     background-attachment: scroll;
 }
