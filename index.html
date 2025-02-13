@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/css/index_style.css" rel="stylesheet"> 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
     <title>Restaurant</title>
 </head>
 <body class="d-flex flex-column min-vh-100">
@@ -45,11 +45,61 @@
     </section>
 
     <main class="flex-shrink-0">
-        
+        <div class="container py-5">
+            <div class="row">
+                <!-- Section À propos -->
+                <div class="col-md-6">
+                    <h2 class="text-center text-md-start">À propos</h2>
+                    <p class="text-center text-md-start">DinoRepas vous invite à une expérience culinaire où innovation et saveurs se rencontrent.</p>
+                    <p class="text-center text-md-start">Dans un cadre chaleureux, chaque plat est préparé avec des ingrédients frais pour vous offrir un moment gastronomique unique.</p>
+                    <p class="text-center text-md-start">Fondé en 3500 av. JC, notre restaurant a su traverser les âges pour offrir aujourd'hui une cuisine toujours plus moderne.</p>
+                </div>
+                
+                <!-- Section Nos spécialités -->
+                <div class="col-md-6">
+                    <h2 class="text-center text-md-start">Nos spécialités</h2>
+    
+                    <p class="text-center text-md-start">
+                        <button type="button" class="btn btn-link text-body text-decoration-none fw-bold" 
+                            data-bs-toggle="popover" data-bs-trigger="focus" title="Steak de T. rex" 
+                            data-bs-content="<img src='assets/img/steak.jpg' alt='Image' class='popover-img'><br>Un steak juteux de T. rex, grillé à la perfection." data-bs-html="true">
+                            Steak de T. rex
+                        </button>
+                    </p>
+    
+                    <p class="text-center text-md-start">
+                        <button type="button" class="btn btn-link text-body text-decoration-none fw-bold" 
+                            data-bs-toggle="popover" data-bs-trigger="focus" title="Nuggets de Raptors" 
+                            data-bs-content="<img src='assets/img/nuggets.jpg' alt='Image' class='popover-img'><br>Des nuggets croustillants à base de viande de raptor." data-bs-html="true">
+                            Nuggets de Raptors
+                        </button>
+                    </p>
+    
+                    <p class="text-center text-md-start">
+                        <button type="button" class="btn btn-link text-body text-decoration-none fw-bold" 
+                            data-bs-toggle="popover" data-bs-trigger="focus" title="Tartare de Tricératops" 
+                            data-bs-content="<img src='assets/img/tartare.jpg' alt='Image' class='popover-img'><br> Un tartare raffiné préparé avec la meilleure viande de tricératops."data-bs-html="true">
+                            Tartare de Tricératops
+                        </button>
+                    </p>
+                </div>
+            </div>
+        </div>
     </main>
+    
 
+    
     <footer class="bg-dark text-white text-center py-0.5 mt-auto">
         <p>&copy; 2025 Gaming Site. Aucun droits réservés.</p>
     </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'));
+            var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+                return new bootstrap.Popover(popoverTriggerEl);
+            });
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

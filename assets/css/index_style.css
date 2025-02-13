@@ -42,9 +42,17 @@ form {
     align-items: center;
     justify-content: center;
 }
+.w-40 {
+    width: 50%;
+    /* margin: 0 auto; Centrer le texte si nécessaire */
+}
 .bg-custom-blue {
     background-color: rgba(13, 110, 253, 0.3); /* Bleu Bootstrap avec 30% d'opacité */
 }
 .rem-fs-slogan {
     font-size: clamp(1.5rem, 4vw, 6rem);
+}
+.popover-img {
+    width: 50%;  /* largeur de l'image à 100px */
+    height: auto;  /* la hauteur s'ajuste automatiquement pour garder les proportions */
 }
