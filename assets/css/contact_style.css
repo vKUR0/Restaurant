@@ -52,13 +52,56 @@ form {
     justify-content: center;
 }
 
-.background-setup2 {
-    background: url("../img/background.jpg") no-repeat center center fixed;
-    background-size: cover;
-    background-attachment: scroll;
+main {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(45deg, #ff9a9e, #fad0c4, #fad0c4, #fbc2eb);
+    background-size: 400% 400%;
+    animation: gradientBG 8s ease infinite;
 }
-.img-thumbnail {
-    border: none; /* Supprime la bordure */
-    padding: 0; /* Supprime l'espace intérieur */
-    background: none; /* Évite toute couleur de fond */
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Style du formulaire */
+.container .col-10 {
+    background: rgba(255, 255, 255, 0.2); /* Fond semi-transparent */
+    backdrop-filter: blur(10px); /* Effet de verre */
+    border-radius: 15px; /* Coins arrondis */
+    padding: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Ombre douce */
+}
+
+/* Style des champs */
+.form-control {
+    border-radius: 8px;
+    border: none;
+    padding: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Effet au focus */
+.form-control:focus {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    transform: scale(1.02); /* Légère mise en avant */
+}
+
+/* Style du bouton */
+.btn-primary {
+    background: linear-gradient(90deg, #ff758c, #ff7eb3);
+    border: none;
+    padding: 12px;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(90deg, #ff7eb3, #ff758c);
+    transform: scale(1.05);
 }
