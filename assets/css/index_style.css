@@ -3,7 +3,6 @@
     padding: 0;
 }
 
-/* Effet hover : agrandir l'image légèrement */
 .img-hover:hover {
     transform: scale(1.1);
     transition: transform 0.3s ease;
@@ -23,18 +22,16 @@
     background: var(--bs-gray-800);
     animation: gray-pulse 2.5s infinite alternate ease-in-out;
 }
-    @keyframes gray-pulse {
-        0% {
-            background-color: var(--bs-gray-800);
-            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
-        }
-        100% {
-            background-color: var(--bs-gray-700);
-            box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
-        }
+
+@keyframes gray-pulse {
+    0% {
+        background-color: var(--bs-gray-800);
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
     }
-form {
-    background: rgba(255, 255, 255, 0.5);
+    100% {
+        background-color: var(--bs-gray-700);
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+    }
 }
 
 .image-setup {
@@ -42,17 +39,17 @@ form {
     align-items: center;
     justify-content: center;
 }
+.clean{
+    background-color: rgb(32 41 55 / 59%);
+    backdrop-filter: blur(2px);
+}
 .w-40 {
     width: 50%;
-    /* margin: 0 auto; Centrer le texte si nécessaire */
-}
-.bg-custom-blue {
-    background-color: rgba(13, 110, 253, 0.3); /* Bleu Bootstrap avec 30% d'opacité */
 }
 .rem-fs-slogan {
     font-size: clamp(1.5rem, 4vw, 6rem);
 }
 .popover-img {
-    width: 50%;  /* largeur de l'image à 100px */
-    height: auto;  /* la hauteur s'ajuste automatiquement pour garder les proportions */
+    width: 50%;
+    height: auto;
 }
