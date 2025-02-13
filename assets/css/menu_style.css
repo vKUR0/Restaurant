@@ -33,23 +33,3 @@
         box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
     }
 }
-
-.image-setup {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.clean{
-    background-color: rgb(32 41 55 / 59%);
-    backdrop-filter: blur(2px);
-}
-.w-40 {
-    width: 50%;
-}
-.rem-fs-slogan {
-    font-size: clamp(1.5rem, 4vw, 6rem);
-}
-.popover-img {
-    width: 50%;
-    height: auto;
-}
