@@ -52,3 +52,12 @@
         --icon-size: 35px;
     }
 }
+
+.popover-img {
+    width: 50%;
+    height: auto;
+}
+
+.willbenone {
+    display: none;
+}
